@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railway Booking System</title>
+    <script src="js/booking.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #bookingMessage {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .nav-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Railway Booking System</h1>
+        
+        <form>
+            <h2>Book Your Train Ticket</h2>
+            
+            <label>Train ID:</label>
+            <input type="text" name="train_id" placeholder="Enter Train ID" required>
+            
+            <label>Passenger Name:</label>
+            <input type="text" name="passenger_name" placeholder="Enter Full Name" required>
+            
+            <label>Travel Date:</label>
+            <input type="date" name="travel_date" required>
+            
+            <button type="submit">Book Ticket</button>
+        </form>
+
+        <div id="bookingMessage"></div>
+
+        <div class="nav-links">
+            <a href="view_bookings.html">View All Bookings</a>
+            <a href="view_trains.html">View Available Trains</a>
+        </div>
+    </div>
+</body>
+</html>

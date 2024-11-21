@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Trains</title>
+    <script src="js/view_trains.js"></script>
+</head>
+<body>
+    <h1>Available Trains</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Train ID</th>
+                <th>Train Name</th>
+                <th>Total Seats</th>
+                <th>Available Seats</th>
+                <th>Train Type</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="trainsBody">
+            <!-- Trains will be dynamically inserted here -->
+        </tbody>
+    </table>
+    <div id="noTrainsMessage" style="display: none;">
+        No trains found.
+    </div>
+    <a href="index.html">Back to Booking</a>
+</body>
+</html>
